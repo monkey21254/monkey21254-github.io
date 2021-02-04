@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Analysis thesis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Matplotplib, np.linspace, drawing chart, 색상표, 여러개의 그래프 보기, surface Matplotlib123import numpy as np  import matplotlib.pyplot as plt  %matplotlib inline   Matplotlib 설치: pip install matplotlib# Jupyter">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Analysis thesis">
+<meta property="og:url" content="https://monkey21254.github.io/img/matplotlib_blog_test.html">
+<meta property="og:site_name" content="Analysis thesis">
+<meta property="og:description" content="Matplotplib, np.linspace, drawing chart, 색상표, 여러개의 그래프 보기, surface Matplotlib123import numpy as np  import matplotlib.pyplot as plt  %matplotlib inline   Matplotlib 설치: pip install matplotlib# Jupyter">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_4_2.svg">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_8_1.svg">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_10_1.svg">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_14_0.svg">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_16_0.svg">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_18_1.svg">
+<meta property="og:image" content="https://monkey21254.github.io/img/output_19_1.svg">
+<meta property="article:published_time" content="2021-02-04T02:28:41.288Z">
+<meta property="article:modified_time" content="2021-02-04T02:27:26.000Z">
+<meta property="article:author" content="Samuel Kim">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://monkey21254.github.io/img/output_4_2.svg">
+  
+    <link rel="alternate" href="/atom.xml" title="Analysis thesis" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Analysis thesis</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">논문 분석</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://monkey21254.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/img/matplotlib_blog_test.html" class="article-date">
+  <time class="dt-published" datetime="2021-02-04T02:28:41.288Z" itemprop="datePublished">2021-02-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Matplotplib, np.linspace, drawing chart, 색상표, 여러개의 그래프 보기, surface</p>
+<h2 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np  </span><br><span class="line">import matplotlib.pyplot as plt  </span><br><span class="line">%matplotlib inline  </span><br></pre></td></tr></table></figure>
+<p>Matplotlib 설치: pip install matplotlib<br># Jupyter Notebook에서 그래프를 표시  </p>
+<p>[Matplotlib Basic]<br><a target="_blank" rel="noopener" href="https://jfun.tistory.com/63">https://jfun.tistory.com/63</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># version check</span></span><br><span class="line"><span class="keyword">import</span> matplotlib <span class="keyword">as</span> plt</span><br><span class="line">plt.__version__</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># data 작성</span></span><br><span class="line">np.random.seed(<span class="number">1</span>)</span><br><span class="line">x = np.arange(<span class="number">10</span>)</span><br><span class="line">y = np.random.rand(<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">print(x)</span><br><span class="line">print(y)</span><br><span class="line"></span><br><span class="line">plt.plot(x,y)</span><br><span class="line">plt.show</span><br></pre></td></tr></table></figure>
+<pre><code>[0 1 2 3 4 5 6 7 8 9]
+[4.17022005e-01 7.20324493e-01 1.14374817e-04 3.02332573e-01
+ 1.46755891e-01 9.23385948e-02 1.86260211e-01 3.45560727e-01
+ 3.96767474e-01 5.38816734e-01]
+
+
+
+
+
+&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;
+</code></pre>
+<p><img src="output_4_2.svg" alt="svg"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span>(<span class="params">x</span>):</span></span><br><span class="line">    <span class="keyword">return</span> (x-<span class="number">2</span>)*x*(x+<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(f(<span class="number">1</span>))</span><br><span class="line">print(f(np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])))</span><br></pre></td></tr></table></figure>
+<pre><code>-3
+[-3  0 15]
+</code></pre>
+<h4 id="np-linspace-start-stop-endpoint-True"><a href="#np-linspace-start-stop-endpoint-True" class="headerlink" title="np.linspace(start, stop, endpoint = True)"></a>np.linspace(start, stop, endpoint = True)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = np.arange(-<span class="number">3</span>, <span class="number">3.5</span>, <span class="number">0.5</span>)</span><br><span class="line">print(x)</span><br><span class="line"></span><br><span class="line">x = np.linspace(-<span class="number">3</span>, <span class="number">3</span>, <span class="number">10</span>)</span><br><span class="line">print(x)</span><br><span class="line">print(np.<span class="built_in">round</span>(x,<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<pre><code>[-3.  -2.5 -2.  -1.5 -1.  -0.5  0.   0.5  1.   1.5  2.   2.5  3. ]
+[-3.         -2.33333333 -1.66666667 -1.         -0.33333333  0.33333333
+  1.          1.66666667  2.33333333  3.        ]
+[-3.   -2.33 -1.67 -1.   -0.33  0.33  1.    1.67  2.33  3.  ]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.plot(x,f(x))</span><br><span class="line">plt.show</span><br></pre></td></tr></table></figure>
+
+
+
+<pre><code>&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;
+</code></pre>
+<p><img src="output_8_1.svg" alt="svg"></p>
+<h4 id="drawing-chart"><a href="#drawing-chart" class="headerlink" title="drawing chart"></a><code>drawing chart</code></h4><ol>
+<li>plt.plot &gt; color, label</li>
+<li>plt.legend(loc=”upper left”) # 범례 표시</li>
+<li>plt.xlim</li>
+<li>plt.ylim</li>
+<li>plt.title</li>
+<li>plt.xlabel</li>
+<li>plt.ylabel</li>
+<li>plt.grid # 격자 유무</li>
+<li>plt.gray</li>
+<li>plt.pcolor</li>
+<li>plt.colorbar</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f2</span>(<span class="params">x, w</span>):</span></span><br><span class="line">    <span class="keyword">return</span> (x-w)*x*(x+w)</span><br><span class="line"></span><br><span class="line">x = np.linspace(-<span class="number">3</span>, <span class="number">3</span>, <span class="number">100</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># drawing chart</span></span><br><span class="line">plt.plot(x, f2(x,<span class="number">2</span>), color = <span class="string">&#x27;black&#x27;</span>, label = <span class="string">&#x27;$w=2$&#x27;</span>)</span><br><span class="line">plt.plot(x, f2(x,<span class="number">1</span>), color = <span class="string">&#x27;cornflowerblue&#x27;</span>, label = <span class="string">&#x27;$w=1$&#x27;</span>)</span><br><span class="line">plt.legend(loc=<span class="string">&quot;upper left&quot;</span>) <span class="comment"># 범례 표시, upper left : 좌상단 표시</span></span><br><span class="line">plt.ylim(-<span class="number">15</span>,<span class="number">15</span>) <span class="comment"># y축 범위 제한</span></span><br><span class="line">plt.title(<span class="string">&quot;Dollar $f_2(x)$&quot;</span>)</span><br><span class="line">plt.xlabel(<span class="string">&#x27;$x$&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;$y$&#x27;</span>)</span><br><span class="line">plt.grid(<span class="literal">True</span>, <span class="string">&#x27;major&#x27;</span>, <span class="string">&#x27;both&#x27;</span>)</span><br><span class="line">plt.show</span><br></pre></td></tr></table></figure>
+
+
+
+<pre><code>&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;
+</code></pre>
+<p><img src="output_10_1.svg" alt="svg"></p>
+<h2 id="색상표"><a href="#색상표" class="headerlink" title="색상표"></a><code>색상표</code></h2><p>import matplotlib<br>matplotlib.colors.cnames  </p>
+<p>ex) ‘cornflowerblue’ : ‘#6495ED’ &gt; 64 95 ED &gt; R G B 색상표에서 계산<br>&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp 64 95 ED (HEX) &gt; 100 149 237 (DEC, RGB)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">matplotlib.colors.cnames</span><br></pre></td></tr></table></figure>
+<h2 id="그래프-여러개-보여주기"><a href="#그래프-여러개-보여주기" class="headerlink" title="그래프 여러개 보여주기"></a><code>그래프 여러개 보여주기</code></h2><ul>
+<li>subplot</li>
+<li>plt.subplot(n1, n2, n)</li>
+<li>n1 : 전체 그림의 세로 개수</li>
+<li>n2 : 전체 그림의 가로 개수</li>
+<li>n : 현재 그림의 위치(좌상단부터 1,2,3,…)<br>&amp;nbsp&amp;nbsp: ※ <strong>0이 아니고 1부터 시작</strong>  </li>
+</ul>
+<ol>
+<li><p>plt.figure  </p>
+</li>
+<li><p>plt.subplots_adjust  </p>
+</li>
+<li><p>plt.subplot</p>
+</li>
+<li><p>plt.subplots_adjust(wspace, hspace) : wspace 가로 공백, hspace 세로 공백  </p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line">plt.figure(figsize=(<span class="number">15</span>,<span class="number">4</span>)) <span class="comment"># figure (전체 크기)지정</span></span><br><span class="line">plt.subplots_adjust(wspace=<span class="number">0.3</span>, hspace=<span class="number">0.7</span>) <span class="comment"># wspace 가로 공백, hspace 세로 공백</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">6</span>):</span><br><span class="line">    plt.subplot(<span class="number">2</span>,<span class="number">3</span>,i+<span class="number">1</span>)</span><br><span class="line">    plt.title(i+<span class="number">1</span>)</span><br><span class="line">    plt.plot(x,f2(x,i), <span class="string">&#x27;cornflowerblue&#x27;</span>)</span><br><span class="line">    plt.xlim(-<span class="number">3</span>,<span class="number">3</span>)</span><br><span class="line">    plt.ylim(-<span class="number">25</span>,<span class="number">25</span>)</span><br><span class="line">    plt.grid(<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="output_14_0.svg" alt="svg"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f3</span>(<span class="params">x0, x1</span>):</span></span><br><span class="line">    r = <span class="number">2</span> * x0**<span class="number">2</span> + x1**<span class="number">2</span></span><br><span class="line">    ans = r * np.exp(-r)</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line"></span><br><span class="line">xn = <span class="number">9</span></span><br><span class="line">x0 = np.linspace(-<span class="number">2</span>,<span class="number">2</span>,xn)</span><br><span class="line">x1 = np.linspace(-<span class="number">2</span>,<span class="number">2</span>,xn)</span><br><span class="line">y = np.zeros((<span class="built_in">len</span>(x0),<span class="built_in">len</span>(x1)))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i0 <span class="keyword">in</span> <span class="built_in">range</span>(x0.size):</span><br><span class="line">    <span class="keyword">for</span> i1 <span class="keyword">in</span> <span class="built_in">range</span>(x1.size):</span><br><span class="line">        y[i0, i1] = f3(x0[i0], x1[i1])</span><br><span class="line"></span><br><span class="line">print(np.<span class="built_in">round</span>(y,<span class="number">2</span>)) <span class="comment"># round(y,소숫점자리수)</span></span><br></pre></td></tr></table></figure>
+<pre><code>[[0.   0.   0.   0.   0.   0.   0.   0.   0.  ]
+ [0.   0.01 0.02 0.04 0.05 0.04 0.02 0.01 0.  ]
+ [0.01 0.06 0.15 0.24 0.27 0.24 0.15 0.06 0.01]
+ [0.05 0.18 0.33 0.35 0.3  0.35 0.33 0.18 0.05]
+ [0.07 0.24 0.37 0.19 0.   0.19 0.37 0.24 0.07]
+ [0.05 0.18 0.33 0.35 0.3  0.35 0.33 0.18 0.05]
+ [0.01 0.06 0.15 0.24 0.27 0.24 0.15 0.06 0.01]
+ [0.   0.01 0.02 0.04 0.05 0.04 0.02 0.01 0.  ]
+ [0.   0.   0.   0.   0.   0.   0.   0.   0.  ]]
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line">plt.figure(figsize=(<span class="number">7</span>,<span class="number">3</span>))</span><br><span class="line">plt.gray()</span><br><span class="line">plt.pcolor(y)</span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.xlim(<span class="number">0</span>,<span class="number">9</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><img src="output_16_0.svg" alt="svg"></p>
+<h2 id="Surface"><a href="#Surface" class="headerlink" title="Surface"></a><code>Surface</code></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> mpl_toolkits.mplot3d <span class="keyword">import</span> Axes3D</span><br><span class="line"></span><br><span class="line">xx0, xx1 = np.meshgrid(x0, x1)</span><br><span class="line"></span><br><span class="line">plt.figure(figsize=(<span class="number">10</span>,<span class="number">5</span>))</span><br><span class="line">ax = plt.subplot(<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>, projection = <span class="string">&#x27;3d&#x27;</span>)</span><br><span class="line">ax.plot_surface(xx0, xx1, y, rstride=<span class="number">1</span>, cstride=<span class="number">1</span>, alpha=<span class="number">0.25</span>, color=<span class="string">&#x27;brown&#x27;</span>, edgecolor=<span class="string">&#x27;cornflowerblue&#x27;</span>)</span><br><span class="line"><span class="comment"># rstride : x 등고선 폭 , cstride : y 등고선 폭, alpha : 선명도</span></span><br><span class="line"></span><br><span class="line">plt.xlim(-<span class="number">3</span>,<span class="number">3</span>)</span><br><span class="line">ax.set_zticks((<span class="number">0</span>,<span class="number">0.1</span>,<span class="number">0.2</span>,<span class="number">0.3</span>)) <span class="comment"># z axis point</span></span><br><span class="line">ax.view_init(<span class="number">40</span>,-<span class="number">50</span>) <span class="comment"># ( xz &amp; yz 평면 기울기, xy평면 회전 )</span></span><br><span class="line">plt.show</span><br></pre></td></tr></table></figure>
+
+
+
+<pre><code>&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;
+</code></pre>
+<p><img src="output_18_1.svg" alt="svg"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line">xn = <span class="number">50</span></span><br><span class="line">x0 = np.linspace(-<span class="number">2</span>,<span class="number">2</span>,xn)</span><br><span class="line">x1 = np.linspace(-<span class="number">2</span>,<span class="number">2</span>,xn)</span><br><span class="line">y = np.zeros((<span class="built_in">len</span>(x0),<span class="built_in">len</span>(x1)))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i0 <span class="keyword">in</span> <span class="built_in">range</span>(x0.size):</span><br><span class="line">    <span class="keyword">for</span> i1 <span class="keyword">in</span> <span class="built_in">range</span>(x1.size):</span><br><span class="line">        y[i0, i1] = f3(x0[i0], x1[i1])</span><br><span class="line"></span><br><span class="line">xx0, xx1 = np.meshgrid(x0,x1)</span><br><span class="line">plt.figure(<span class="number">1</span>, figsize=(<span class="number">4</span>,<span class="number">4</span>))</span><br><span class="line">cont = plt.contour(xx0, xx1, y, <span class="number">5</span>, colors=<span class="string">&#x27;cornflowerblue&#x27;</span>)</span><br><span class="line"><span class="comment"># cont : contour, 5 : 등고선의 높이를 5단계로 지시</span></span><br><span class="line">cont.clabel(fmt=<span class="string">&#x27;%3.2f&#x27;</span>, fontsize=<span class="number">8</span>)</span><br><span class="line"><span class="comment"># fmt : format, plt.contour의 반환값을 cont에 저장하고 cont.clabel로 출력</span></span><br><span class="line">plt.xlabel(<span class="string">&quot;$x_0$&quot;</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">plt.ylabel(<span class="string">&quot;$x_1$&quot;</span>, fontsize=<span class="number">14</span>)</span><br><span class="line">plt.show</span><br></pre></td></tr></table></figure>
+
+
+
+<pre><code>&lt;function matplotlib.pyplot.show(close=None, block=None)&gt;
+</code></pre>
+<p><img src="output_19_1.svg" alt="svg"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://monkey21254.github.io/img/matplotlib_blog_test.html" data-id="ckkq8xsmv0000qgvtbudn4ubf" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/02/04/First-Post/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Samuel Kim<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
